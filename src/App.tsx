@@ -47,14 +47,20 @@ const Stopwatch = () => {
   };
 
   return (
-    <div className="stopwatch">
-      <h1>Stopwatch</h1>
+    <>
+      <p>Author is Raag Joshi</p>
+      <p>Stopwatch</p>
       <p>{formatTime(elapsedTime)}</p>
-      <button onClick={isRunning ? stopStopwatch : startStopwatch}>
+      <button
+        className="stopwatch"
+        onClick={isRunning ? stopStopwatch : startStopwatch}
+      >
         {isRunning ? "Stop" : "Start"}
       </button>
-      <button onClick={resetStopwatch}>Reset</button>
-    </div>
+      <button className="stopwatch" onClick={resetStopwatch}>
+        Reset
+      </button>
+    </>
   );
 };
 
