@@ -48,7 +48,7 @@ const Stopwatch = () => {
 
   return (
     <>
-      <p>Author is Raag Joshi</p>
+      <span>Author is Raag Joshi</span>
       <p>Stopwatch</p>
       <p>{formatTime(elapsedTime)}</p>
       <button
